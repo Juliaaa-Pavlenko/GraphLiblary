@@ -25,7 +25,7 @@ namespace GraphLibrary
 
     public class Top : Graph
     {
-        public Top(int number) : base(number)  // Викликаємо базовий конструктор
+        public Top(int number) : base(number)  
         {
         }
 
@@ -91,10 +91,8 @@ namespace GraphLibrary
             return elements.OfType<Top>().Count();
         }
 
-        // Новий метод
         public int GetAdjacentArcCount(int topNumber)
         {
-            // Рахуємо дуги, які або починаються, або закінчуються у вказаній вершині
             return elements.OfType<Arc>().Count(arc => arc.Start == topNumber || arc.End == topNumber);
         }
     }
