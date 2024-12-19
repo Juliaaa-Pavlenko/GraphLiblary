@@ -20,11 +20,11 @@ namespace graphWindowsFormsApp
 
         private void ButtonFindAdjacentArcs_Click(object sender, EventArgs e)
         {
-            if (int.TryParse(TextBoxVertexNumber.Text, out int vertexNumber))
+            if (int.TryParse(TextBoxTopNumber.Text, out int topNumber))
             {
-                int adjacentArcs = container.GetAdjacentArcCount(vertexNumber);
+                int adjacentArcs = container.GetAdjacentArcCount(topNumber);
 
-                listBox.Items.Add($"Top {vertexNumber} has {adjacentArcs} adjacent arcs.");
+                listBox.Items.Add($"Top {topNumber} has {adjacentArcs} adjacent arcs.");
             }
             else
             {
@@ -191,7 +191,7 @@ namespace graphWindowsFormsApp
             g.DrawString($"Arc {arc.Number}", this.Font, Brushes.Black, (x1 + x2) / 2, (y1 + y2) / 2);
         }
 
-        private void lblVertexNumber_Click(object sender, EventArgs e)
+        private void lblTopNumber_Click(object sender, EventArgs e)
         {
 
         }

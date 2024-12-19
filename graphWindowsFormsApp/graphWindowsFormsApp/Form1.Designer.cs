@@ -17,8 +17,8 @@ namespace graphWindowsFormsApp
         private ListBox listBox;
         private System.Windows.Forms.Panel drawingPanel;
         private Button btnFindAdjacentArcs;
-        private TextBox TextBoxVertexNumber;
-        private Label lblVertexNumber;
+        private TextBox TextBoxTopNumber;
+        private Label lblTopNumber;
 
         private void InitializeComponent()
         {
@@ -34,8 +34,8 @@ namespace graphWindowsFormsApp
             this.txtRemoveNumber = new System.Windows.Forms.TextBox();
             this.listBox = new System.Windows.Forms.ListBox();
             this.btnFindAdjacentArcs = new System.Windows.Forms.Button();
-            this.TextBoxVertexNumber = new System.Windows.Forms.TextBox();
-            this.lblVertexNumber = new System.Windows.Forms.Label();
+            this.TextBoxTopNumber = new System.Windows.Forms.TextBox();
+            this.lblTopNumber = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCountTops
@@ -141,29 +141,29 @@ namespace graphWindowsFormsApp
             this.btnFindAdjacentArcs.UseVisualStyleBackColor = true;
             this.btnFindAdjacentArcs.Click += new System.EventHandler(this.ButtonFindAdjacentArcs_Click);
             // 
-            // TextBoxVertexNumber
+            // TextBoxTopNumber
             // 
-            this.TextBoxVertexNumber.Location = new System.Drawing.Point(149, 341);
-            this.TextBoxVertexNumber.Name = "TextBoxVertexNumber";
-            this.TextBoxVertexNumber.Size = new System.Drawing.Size(120, 22);
-            this.TextBoxVertexNumber.TabIndex = 11;
+            this.TextBoxTopNumber.Location = new System.Drawing.Point(149, 341);
+            this.TextBoxTopNumber.Name = "TextBoxTopNumber";
+            this.TextBoxTopNumber.Size = new System.Drawing.Size(120, 22);
+            this.TextBoxTopNumber.TabIndex = 11;
             // 
-            // lblVertexNumber
+            // lblTopNumber
             // 
-            this.lblVertexNumber.AutoSize = true;
-            this.lblVertexNumber.Location = new System.Drawing.Point(12, 340);
-            this.lblVertexNumber.Name = "lblVertexNumber";
-            this.lblVertexNumber.Size = new System.Drawing.Size(111, 16);
-            this.lblVertexNumber.TabIndex = 10;
-            this.lblVertexNumber.Text = "Enter top number:";
-            this.lblVertexNumber.Click += new System.EventHandler(this.lblVertexNumber_Click);
+            this.lblTopNumber.AutoSize = true;
+            this.lblTopNumber.Location = new System.Drawing.Point(12, 340);
+            this.lblTopNumber.Name = "lblTopNumber";
+            this.lblTopNumber.Size = new System.Drawing.Size(111, 16);
+            this.lblTopNumber.TabIndex = 10;
+            this.lblTopNumber.Text = "Enter top number:";
+            this.lblTopNumber.Click += new System.EventHandler(this.lblTopNumber_Click);
             // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(1142, 482);
             this.Controls.Add(this.btnFindAdjacentArcs);
-            this.Controls.Add(this.TextBoxVertexNumber);
-            this.Controls.Add(this.lblVertexNumber);
+            this.Controls.Add(this.TextBoxTopNumber);
+            this.Controls.Add(this.lblTopNumber);
             this.Controls.Add(this.btnCountTops);
             this.Controls.Add(this.drawingPanel);
             this.Controls.Add(this.btnAddTop);
